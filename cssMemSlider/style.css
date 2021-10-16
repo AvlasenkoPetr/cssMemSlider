@@ -2,6 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-y: hidden;
+}
 main{
     background: #f1faee;
     padding: 20px 0px;
@@ -133,8 +136,18 @@ input{
     height: 100%;
 }
 .meme1{
-    background-image: url(./memes/meme1.jpg);
+    background-image: url(./memes/meme6.jpg);
+    background-position: 0 -50px;
 }
 .meme2{
     background-image: url(./memes/meme2.jpg);
+}
+.meme3{
+    background-image: url(./memes/meme.gif);
+}
+.meme4{
+    background-image: url(./memes/meme3.jpg) ;
+}
+.meme5{
+    background-image: url(./memes/meme1.jpg);
 }
