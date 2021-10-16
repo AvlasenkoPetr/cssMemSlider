@@ -1,37 +1,38 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 main{
     background: #f1faee;
     padding: 20px 0px;
-    height: 100vh;
+    height: 1500px;
 }
 section{
     background: #a8dadc;
     margin: 0 auto;
     border-radius: 50px;
     height: 100%;
-    max-height: 700px;
+    max-height: 800px;
     min-height: 300px;
-    width: 80%;
+    width: 60%;
     max-width: 1440px;
     padding: 70px 100px;
 }
 .screen{
     margin: 0 auto;
-    height: 800px;
+    height: 41vw;
+    max-height: 800px;
     width: 100%;
     overflow: hidden;
 }
 .slider{
     display: flex;
     width: 500%;
-    height: 80%;
+    height: 70%;
 }
 .slide{
     height: 100%;
     width: 20%;
-    background: wheat;
     transition: 0.5s ease;
 }
 .dots{
@@ -39,8 +40,8 @@ section{
     justify-content: flex-end;
 }
 .dot{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 9px solid #a8dadc;
     background-color: #1d3557;
     margin: 10px 0px 10px 10px;
@@ -72,18 +73,68 @@ input{
 #t5:checked ~ .slider .s1{
     margin-left: -80%;
 }
-#t1:checked ~ .dots .dot:first-child{
+#t1:checked ~ .low-panel .dots .dot:first-child{
     background-color: #e63946;
 }
-#t2:checked ~ .dots .dot:nth-of-type(2){
+#t2:checked ~ .low-panel .dots .dot:nth-of-type(2){
     background-color: #e63946;
 }
-#t3:checked ~ .dots .dot:nth-of-type(3){
+#t3:checked ~ .low-panel .dots .dot:nth-of-type(3){
     background-color: #e63946;
 }
-#t4:checked ~ .dots .dot:nth-of-type(4){
+#t4:checked ~ .low-panel .dots .dot:nth-of-type(4){
     background-color: #e63946;
 }
-#t5:checked ~ .dots .dot:last-child{
+#t5:checked ~ .low-panel .dots .dot:last-child{
     background-color: #e63946;
+}
+#t1:checked ~ .low-panel .text-container .text-slider .text:first-child{
+    margin: 0;
+}
+#t2:checked ~ .low-panel .text-container .text-slider .text:first-child{
+    margin: -10%;
+}
+#t3:checked ~ .low-panel .text-container .text-slider .text:first-child{
+    margin: -20%;
+}
+#t4:checked ~ .low-panel .text-container .text-slider .text:first-child{
+    margin: -30%;
+}
+#t5:checked ~ .low-panel .text-container .text-slider .text:first-child{
+    margin: -40%;
+}
+.low-panel{
+    display: flex;
+    justify-content: space-between;
+}
+.text-container{
+    width: 60%;
+    overflow: hidden;
+}
+.text-slider{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.text{
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Forum', sans-serif;
+    height: 100%;
+    width: 20%;
+    transition: 0.5s ease;
+}
+.meme{
+    background-color: #1d3557;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.meme1{
+    background-image: url(./memes/meme1.jpg);
+}
+.meme2{
+    background-image: url(./memes/meme2.jpg);
 }
