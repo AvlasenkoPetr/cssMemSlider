@@ -4,30 +4,30 @@
 }
 main{
     background: #f1faee;
-    padding: 20px 0px;
+    padding: 1.25rem 0;
     height: 100vh;
 }
 section{
     background: #a8dadc;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     height: 100%;
-    max-height: 900px;
+    max-height: 57.5rem;
     width: 60%;
-    max-width: 1440px;
+    max-width: 90rem;
     padding: 5% 7%;
 }
 .screen{
     margin: 0 auto;
     height: 100%;
-    max-height: 800px;
+    max-height: 60rem;
     width: 100%;
     overflow: hidden;
 }
 .slider{
     display: flex;
     width: 500%;
-    height: 70%;
+    height: 80%;
 }
 .slide{
     height: 100%;
@@ -39,11 +39,11 @@ section{
     justify-content: flex-end;
 }
 .dot{
-    width: 40px;
-    height: 40px;
-    border: 9px solid #a8dadc;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.6rem solid #a8dadc;
     background-color: #1d3557;
-    margin: 10px 0px 10px 10px;
+    margin: 0.625rem 0 0.625rem 0.625rem;
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -103,19 +103,19 @@ input{
     background-color:#9c1e28;
 }
 #t1:checked ~ .low-panel .text-container .text-slider .text:first-child{
-    margin: 0;
+    margin-left: 0;
 }
 #t2:checked ~ .low-panel .text-container .text-slider .text:first-child{
-    margin: -10%;
+    margin-left: -20%;   
 }
 #t3:checked ~ .low-panel .text-container .text-slider .text:first-child{
-    margin: -20%;
+    margin-left: -40%;
 }
 #t4:checked ~ .low-panel .text-container .text-slider .text:first-child{
-    margin: -30%;
+    margin-left: -60%;
 }
 #t5:checked ~ .low-panel .text-container .text-slider .text:first-child{
-    margin: -40%;
+    margin-left: -80%;
 }
 .low-panel{
     display: flex;
@@ -131,8 +131,8 @@ input{
     height: 100%;
 }
 .text{
-    padding-top: 10px;
-    font-size: 30px;
+    padding-top: 0.625rem;
+    font-size: 1.875rem;
     font-family: 'Forum', sans-serif;
     height: 100%;
     width: 20%;
@@ -148,7 +148,7 @@ input{
 }
 .meme1{
     background-image: url(./memes/meme6.jpg);
-    background-position: 0 -50px;
+    background-position: 0 -3.125rem;
 }
 .meme2{
     background-image: url(./memes/meme2.jpg);
@@ -164,10 +164,18 @@ input{
     background-image: url(./memes/meme1.jpg);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1300px){
+    section{
+        padding: 3%;
+    }
+    .slider{
+        height: 70%;
+    }
+}
+@media (max-width: 1050px){
     section{
         width: 80%;
-        min-height: 450px;
+        min-height: 28.125rem;
     }
     .screen{
         height: 100%;
@@ -180,19 +188,30 @@ input{
         order: 1;
     }
     .dot{
-        height: 25px;
-        width: 25px;
-        border: 4px solid #a8dadc;
-        margin: 10px 0px 10px 10px;
+        height: 1.5625rem;
+        width: 1.5625rem;
+        border: 0.25rem solid #a8dadc;
+        margin: 0.625rem 0 0.625rem 0.625rem;
     }
     .text-container{
         width: 100%;
         order: 2;
     }
     .text{
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     .meme1{
-        background-position: 0 -20px;
+        background-position: 0 -1.25rem;
+    }
+}
+
+@media(max-width:750px) {
+    .meme1{
+        background-position:center;
+        background-size: contain;
+    }
+    .meme5{
+        background-position:center;
+        background-size: contain;
     }
 }
