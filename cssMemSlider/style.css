@@ -2,13 +2,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    overflow-y: hidden;
-}
 main{
     background: #f1faee;
     padding: 20px 0px;
-    height: 1500px;
+    height: 100vh;
 }
 section{
     background: #a8dadc;
@@ -156,7 +153,6 @@ input{
     section{
         width: 80%;
         min-height: 450px;
-        height: 80vh;
     }
     .screen{
         height: 100%;
