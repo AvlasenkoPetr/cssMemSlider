@@ -75,17 +75,32 @@ input{
 #t1:checked ~ .low-panel .dots .dot:first-child{
     background-color: #e63946;
 }
+#t1:checked ~ .low-panel .dots .dot:first-child:hover{
+    background-color:#9c1e28;
+}
 #t2:checked ~ .low-panel .dots .dot:nth-of-type(2){
     background-color: #e63946;
+}
+#t2:checked ~ .low-panel .dots .dot:nth-of-type(2):hover{
+    background-color:#9c1e28;
 }
 #t3:checked ~ .low-panel .dots .dot:nth-of-type(3){
     background-color: #e63946;
 }
+#t3:checked ~ .low-panel .dots .dot:nth-of-type(3):hover{
+    background-color:#9c1e28;
+}
 #t4:checked ~ .low-panel .dots .dot:nth-of-type(4){
     background-color: #e63946;
 }
+#t4:checked ~ .low-panel .dots .dot:nth-of-type(4):hover{
+    background-color:#9c1e28;
+}
 #t5:checked ~ .low-panel .dots .dot:last-child{
     background-color: #e63946;
+}
+#t5:checked ~ .low-panel .dots .dot:last-child:hover{
+    background-color:#9c1e28;
 }
 #t1:checked ~ .low-panel .text-container .text-slider .text:first-child{
     margin: 0;
